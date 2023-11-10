@@ -1,10 +1,11 @@
-import pyscreenshot as ImageGrab
+# import pyscreenshot as ImageGrab
 import pytesseract
 import cv2
-import sys
-from PIL import Image
+# import sys
+# from PIL import Image
 from playsound import playsound
 
+alarm_path = 'assets/attention.mp3'
 
 # get two points for screenshot boundary
 # x1 = sys.argv[1], y1 = sys.argv[2]
@@ -19,7 +20,7 @@ from playsound import playsound
 # ImageGrab.grab_to_file('im.png')
 
 # Load image for detection processing
-image = cv2.imread('sample.png')
+image = cv2.imread('assets/sample.png')
 
 # Resize for better detection accuracy
 image = cv2.resize(image, None, fx=2, fy=2)
@@ -41,4 +42,4 @@ for val_str in val_vector:
     if val > 10:
         # play sound for alarming.
         print('got a big fish here: ', val)
-        playsound('attention.mp3')
+        playsound(alarm_path)
