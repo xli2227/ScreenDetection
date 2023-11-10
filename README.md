@@ -6,15 +6,33 @@ This application takes screenshot of a certain screen area and applies
 
 ## Installation Instruction
 
-### For Mac
-
 #### Required Dependencies
 
-- Python 3.x is required
-- 
+- Python Dependency Management - [Peotry](https://python-poetry.org/)  
+    - Set config `poetry config virtualenvs.in-project true`
 
-### For Win
+#### Steps
 
+- Install package
+```
+poetry install
+```
 
-## Useful Info
-- [How to Create and Use Virtual Environments in Python With Poetry](https://www.youtube.com/watch?v=0f3moPe_bhk)
+- [Optional] Fix some unresolved playsound dependency issue
+```
+# Make sure you are in this folder
+
+pip3 install playsound
+
+```
+
+- Shell into virtual env
+```
+peotry shell
+```
+
+- Now you are able to execute the main program
+
+```
+python3 src/exeution.py
+```
