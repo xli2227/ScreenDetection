@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "screendetection"
+version = "0.1.0"
+description = "a simple tool that take screenshot of certian screen area and extract numbers from it."
+authors = ["Xiaoyang Li <ldlglxy@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
