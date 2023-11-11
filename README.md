@@ -4,7 +4,7 @@ This application takes screenshot of a certain screen area and applies
 [Tesseract OCR](https://nanonets.com/blog/ocr-with-tesseract/) to extracting the numbers within the image.
 
 
-## Installation Instruction
+## For Mac: Installation Instruction
 
 #### Required Dependencies
 
@@ -36,3 +36,22 @@ peotry shell
 ```
 python3 src/exeution.py
 ```
+
+## For Windows: Installation Instruction
+
+[Install Python3.x](https://www.python.org/downloads/windows/) 
+
+```
+pip install -U Pillow
+pip install pytesseract
+pip install opencv-python
+pip install --upgrade setuptools wheel
+pip install playsound
+```
+
+===> After all the installation, you will see
+
+```
+tesseract is not installed or it's not in your PATH
+```
+Referring to: https://stackoverflow.com/questions/50951955/pytesseract-tesseractnotfound-error-tesseract-is-not-installed-or-its-not-i
